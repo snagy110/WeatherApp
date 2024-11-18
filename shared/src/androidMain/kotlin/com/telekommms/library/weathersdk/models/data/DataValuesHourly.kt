@@ -1,0 +1,35 @@
+package com.telekommms.library.weathersdk.models.data
+
+@kotlinx.serialization.Serializable
+data class DataValuesHourly(
+    val cloudBase: Double? = 0.0,
+    val cloudCeiling: Double? = 0.0,
+    val cloudCover: Double? = 0.0,
+    val dewPoint: Double,
+    val evapotranspiration: Double,
+    val freezingRainIntensity: Double,
+    val humidity: Double,
+    val iceAccumulation: Double,
+    val iceAccumulationLwe: Double? = null,
+    val precipitationProbability: Double,
+    val pressureSurfaceLevel: Double,
+    val rainAccumulation: Double,
+    val rainAccumulationLwe: Double? = null,
+    val rainIntensity: Double,
+    val sleetAccumulation: Double,
+    val sleetAccumulationLwe: Double? = null,
+    val sleetIntensity: Double,
+    val snowAccumulation: Double,
+    val snowAccumulationLwe: Double? = null,
+    val snowDepth: Double? = null,
+    val snowIntensity: Double? = null,
+    val temperature: Double,
+    val temperatureApparent: Double,
+    val uvHealthConcern: Int? = null,
+    val uvIndex: Int? = null,
+    val visibility: Double,
+    val weatherCodeValue: Int,
+    val windDirection: Double,
+    val windGust: Double,
+    val windSpeed: Double
+)
